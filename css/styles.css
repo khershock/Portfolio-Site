@@ -1,0 +1,12 @@
+.jumbotron {
+	background-image: url(../img/portfolio.jpeg);
+	background-size: cover;
+}
+
+.jumbotron p {
+	color: white;
+}
+
+.jumbotron a {
+	color: black;
+}
