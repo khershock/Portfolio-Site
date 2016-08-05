@@ -1,13 +1,18 @@
 /*Typography*/
 
-h1,
-h2,
-h3 {
-	font-family: Futura, Helvetica, Arial, sans-serif;
+.nav {
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
-p,
-li {
-	font-family: Georgia, Palatino, Lucida Bright, serif;
+.header h1 {
+	font-size: 80px;
+}
+
+.header p {
+	font-size: 
+}
+
+.main {
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 

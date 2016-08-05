@@ -1,3 +1,4 @@
+/* index */
 .jumbotron {
 	background-image: url(../img/portfolio.jpeg);
 	background-size: cover;
@@ -9,4 +10,110 @@
 
 .jumbotron a {
 	color: black;
+}
+/* end index */
+
+/* CSS for about, contact */
+body {
+	background-color: #DADCDE;
+}
+
+.nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #DADCDE;
+}
+.top {
+	display: inline-block;
+}
+
+.nav ul {
+	text-align: center;
+}
+
+
+.nav ul li {
+	display: inline-block;
+}
+
+.nav ul li a {
+	color: black;
+	letter-spacing: 0.05em;
+	padding: 20px 10px 20px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: #4BBC96;
+}
+
+.header p {
+	color: #838383;
+	margin-top: -50px;
+}
+
+.main {
+	padding-top: 85px;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	text-align: center;
+}
+
+/* about */
+.column {
+	width: 30%;
+	display: inline-block;
+	float: left;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.skills ul {
+	text-align: center;
+}
+
+.intro {
+	padding-left: 70px;
+}
+
+.story {
+	clear: both;
+	padding-top: 60px;
+}
+/*end about */
+
+/* contact */
+.contact {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.contact img {
+	width: 104px;
+	height: 104px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.contact p {
+	width: 40%;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+
+.sig {
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.sig p {
+	
 }
