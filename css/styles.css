@@ -19,13 +19,11 @@ body {
 }
 
 .nav {
+	padding-top: 5px;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	background-color: #DADCDE;
-}
-.top {
-	display: inline-block;
 }
 
 .nav ul {
@@ -48,12 +46,17 @@ body {
 	color: #4BBC96;
 }
 
+.header h1 {
+	color: black;
+}
+
 .header p {
 	color: #838383;
-	margin-top: -50px;
+	margin-top: -10px;
 }
 
 .main {
+	color: black;
 	padding-top: 85px;
 	width: 90%;
 	height: 100%;
@@ -114,6 +117,17 @@ body {
 	text-align: center;
 }
 
-.sig p {
-	
+/* faq */
+.panel-default {
+	background-color: #DADCDE;
+	color: black;
+}
+
+.panel-title {
+	color: black;
+	text-align: center;
+}
+
+.panel-default>.panel-heading {
+    background-color:#838383;
 }
