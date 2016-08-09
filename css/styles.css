@@ -1,4 +1,4 @@
-/* index */
+/********* index *********/
 .jumbotron {
 	background-image: url(../img/portfolio.jpeg);
 	background-size: cover;
@@ -11,9 +11,35 @@
 .jumbotron a {
 	color: black;
 }
-/* end index */
 
-/* CSS for about, contact */
+.carousel-caption h3 {
+	font-size: 60px;
+}
+
+.carousel-caption p {
+	font-size: 30px;
+}
+
+#cap1 p {
+	padding-bottom: 210px;
+}
+
+#cap2 p {
+	padding-bottom: 210px;
+}
+
+#cap3 p {
+	padding-bottom: 210px;
+}
+
+.carousel-caption img {
+	width: 104px;
+	height: 104px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+/******** CSS for all pages ********/
 body {
 	background-color: #DADCDE;
 }
@@ -24,6 +50,7 @@ body {
 	width: 100%;
 	top: 0;
 	background-color: #DADCDE;
+	z-index: 1;
 }
 
 .nav ul {
@@ -67,7 +94,7 @@ body {
 	text-align: center;
 }
 
-/* about */
+/********** about **********/
 .column {
 	width: 30%;
 	display: inline-block;
@@ -88,9 +115,12 @@ body {
 	clear: both;
 	padding-top: 60px;
 }
-/*end about */
 
-/* contact */
+.image img {
+	border-radius: 10%;
+}
+
+/********* contact *********/
 .contact {
 	text-align: center;
 	padding-top: 30px;
@@ -117,7 +147,7 @@ body {
 	text-align: center;
 }
 
-/* faq */
+/********* FAQ **********/
 .panel-default {
 	background-color: #DADCDE;
 	color: black;
@@ -130,4 +160,13 @@ body {
 
 .panel-default>.panel-heading {
     background-color:#838383;
+}
+
+.panel-body a {
+	color: black;
+	text-decoration: underline;
+}
+
+.nav a.active {
+	color: red;
 }
