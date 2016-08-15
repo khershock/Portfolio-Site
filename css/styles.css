@@ -13,11 +13,12 @@
 }
 
 .carousel-caption h3 {
-	font-size: 60px;
+	font-size: 6em;
+
 }
 
 .carousel-caption p {
-	font-size: 30px;
+	font-size: 3em;
 }
 
 #cap1 p {
@@ -32,12 +33,25 @@
 	padding-bottom: 210px;
 }
 
-.carousel-caption img {
-	width: 104px;
-	height: 104px;
-	margin-right: 20px;
-	margin-left: 20px;
+#homeh {
+	text-align: center;
+	padding-bottom: 40px;
 }
+
+#work {
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.moreb {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.test {
+	padding: 10px;
+}
+
 
 /******** CSS for all pages ********/
 body {
@@ -67,6 +81,8 @@ body {
 	letter-spacing: 0.05em;
 	padding: 20px 10px 20px;
 	text-decoration: none;
+	transition: color 700ms;
+	-webkit-transition: color 700ms;
 }
 
 .nav a:hover {
@@ -95,35 +111,15 @@ body {
 }
 
 /********** about **********/
-.column {
-	width: 30%;
-	display: inline-block;
-	float: left;
-	padding-top: 40px;
-	text-align: center;
-}
 
-.skills ul {
-	text-align: center;
-}
-
-.intro {
-	padding-left: 70px;
-}
-
-.story {
-	clear: both;
-	padding-top: 60px;
-}
-
-.image img {
-	border-radius: 10%;
+#aboutgrid {
+	padding-top: 30px;
 }
 
 /********* contact *********/
 .contact {
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
 .contact img {
@@ -170,3 +166,5 @@ body {
 .nav a.active {
 	color: red;
 }
+
+/********** Work **********/
