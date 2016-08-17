@@ -26,7 +26,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
     <!-- Main jumbotron for a primary marketing message or call to action
     <div class="jumbotron">
@@ -42,22 +42,40 @@
       <div class="container">
       </div>
     </div></jumbotron -->
-    <div class="nav">
-      <ul>
-        <li><a class="active" href="#">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="work.html">WORK</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="mybrand">
+            <a class="navbar-brand" href="#">KORY <p>HERSHOCK</p></a>
+          </div>
+        </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+            <!-- /.navbar-collapse -->
+      </div>
+        <!-- /.container -->
+    </nav>
     <div class="container-fluid">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="carousel-home" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-home" data-slide-to="1"></li>
+          <li data-target="#carousel-home" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -81,77 +99,280 @@
           <div class="item">
             <img src="img/home3.jpg" alt="...">
             <div class="carousel-caption" id="cap3">
-              <h3>Define Yourself</h3>
+              <h3>Stand Out</h3>
               <p>with a <span style="color:#F70707">beautiful design</span></p>
             </div>
           </div>
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Portfolio Concept</h2>
-          <p>I would like for my portfolio to showcase professional work that I have done. I have a lot of school projects that I could display, but I want to start fresh and really brand myself as a web developer first instead of throwing bits and pieces of everything on here just to fill the page. I hope for my porfolio to be very user friendly and easy to navigate. I currently have some working knowledge in the following languages: Java, Python, C++, MIPS, Objective-C, and some HTML. As I advance further in my new career, I hope to fill out my page with pieces of work that I am truly proud of. </p>
-          <p><a class="btn btn-default" href="" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-        <div class="col-md-4">
-          <h2>Project Goals</h2>
-          <p>My goal for this course is to finish it within the 6 month time span. I would love to finish it as quickly as possible, but I want to make sure that I learn everything to the best of my ability before moving on. In doing this, I will ensure that when I land my first job as a web developer I will be in the right position to succeed. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div><!-- /col -->
-        <div class="col-md-4">
-          <h2>Course Goals</h2>
-          <p>I just recently graduated from college with a degree in Information Technology Management and decided that I am very interested in web development. By taking this course, I hope to land an entry level web development job while trying to get a freelance career off the ground. An ideal job for me would be anything to do with sports, so if I could help design user friendly websites for sports fans I believe that I would have a great chance to do well.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-      </div><!-- /row -->
-
-      <hr>
+    </div>
 
 
     </div> <!-- /container -->
-    <h1 id="homeh">My Work</h1>
+    <h1 id="homeh"><hr id="testhr">THINGS THAT I DO<hr id="testhr"></h1>
     <div class="container">
-      <div class="row" id="work">
-        <div class="col-md-4">
-          <div class = "col-screensize-number">
+      <div class="row" id="mywork">
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="test">
-              <img src="img/ca.jpg">
+              <img class="img-responsive" src="img/coding.png">
+              <h3>FRONT-END <br>DEVELOPMENT</h3>
+              <p>I build websites with HTML, CSS, and jQuery to build responsive and non-responsive sites.</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class = "col-screensize-number">
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="test">
-              <img src="img/ca.jpg">
+              <img class="img-responsive" src="img/responsive.png">
+              <h3>RESPONSIVE WEB <br>DESIGN</h3>
+              <p>Responsive sites will fit all screen sizes, from mobile to desktop, to create the ultimate user experience.</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class = "col-screensize-number">
+        <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="test">
-              <img src="img/ca.jpg">
+              <img class="img-responsive" src="img/pencil.png">
+              <h3>USER INTERFACE <br>DESIGN</h3>
+              <p>I will design websites that are easy to navigate, so your visitor will never be lost.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container-fluid" id="about">
+      <div class="main text">
+      <div class="header">
+        <h1>About Kory</h1>
+        <p><em>Everything you need to know</em></p>
+      </div> <!--header-->
+      <div class="container" id="aboutgrid">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <img class="img-responsive" src="img/me.jpg" alt="Me">
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h2>Introduction</h2>
+            <p>
+              My name is Kory Hershock and I am a Web Developer out of Marshall, MI. I obtained a Bachelor of Arts in Computer Science from Olivet College. Aside from creating websites and other software, I love participating in and attending sporting events. I am currently taking projects, so if you would like to inquire about hiring me or just want to send me a message, go ahead and do so. I look forward to hearing from you.
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <h3>My Skills</h3>
+            <ul id="skill-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>Ruby</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <h3>My Story</h3>
+            <p>I was born in Detroit, MI and moved to Marshall, MI at a very young age. After High School I wasn't sure what I wanted to do with the rest of my life, so I took a couple years off college and took over the family business, Hungry Howies Pizza. After realizing that I wanted to work with computers, I went back to college and finished within a year of being back. I love the way a beutifully designed website looks and functions, and I hope to be able to provide that service and more to great people.</p>
+          </div>
+        </div>
+      </div>
+    </div> <!--main text-->
+    </div>
+    <div class="container-fluid" id="contact">
+      <div class="main text">
+      <div class="header">
+        <h1>Contact Me</h1>
+        <p><em>I'd love to hear from you!</em></p>
+      </div> <!--header-->
+      <div class="contact">
+        <h2>Hey There!</h2>
+        <p>I'm really excited to hear what you have to say, whether its about working together, your career, or even just life. Depending on how you want to connect with me, I gave you a few options below:</p>
+        <a href="mailto:khershockhh@gmail.com?Subject=Hey%20There!" target="_top"><img src="img/mail_logo.png"></a>
+        <a href="https://www.facebook.com/kory.hershock" target="_blank"><img src="img/facebook_logo.png"></a>
+        <a href="https://www.linkedin.com/in/kory-hershock-63888059" target="_blank"><img src="img/linkedin_logo.png"></a>
+        <a href="https://www.instagram.com/kory_hershock/?hl=en" target="_blank"><img src="img/instagram_logo.png"></a>
+      </div>
+      <div class="sig">
+        <p>Thanks,</p>
+        <h2>Kory Hershock</h2>
       </div>
     </div>
-    <div class="moreb">
-      <a href="work.html" class="btn btn-info" role="button">View More Work</a>
+
     </div>
+    <div class="container-fluid" id="work">
+      <div class="main text">
+      <div class="header">
+        <h1>My Work</h1>
+        <p id="work-p"><em>What I've Done</em></p>
+      </div> <!--header-->
+    <div class="container" id="workcontainer">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 1</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 2</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 3</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 4</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 5</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 6</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 7</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h2>Project 8</h2>
+                <a class="info" href="#">link here</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="container-fluid" id="faq">
+      <div class="main text">
+      <div class="header">
+        <h1>FAQ</h1>
+        <p><em>Frequently Asked Questions</em></p>
+      </div> <!--header-->
+      <div class="container">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><strong>
+            Why did I choose to go into Web Development?
+              </strong></a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              The thing I love most about web development is the fact that I can work from anywhere in the world. I love the process in which it takes to build a professional website, it keeps me on my toes not knowing what type of project I will have next. I chose web developent to hopefully someday live my dream life of traveling the world while making an honest living remotely.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><strong>
+          Which web developer inspires me the most?
+          </strong></a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          When I first started to learn about web development, I was taking online classes through <a href="http://www.bradhussey.ca/" target="_blank">Brad Hussey</a>, my favorite web developer. The reason he inspires me so much is because he started just like any of us would, from the ground up. He is a freelance web developer who makes a living through his online businesses and classes. Be sure to check him out!
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><strong>
+          What process do I use when developing a website?
+          </strong></a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><strong>
+          Question #4
+          </strong></a>
+        </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><strong>
+          Question #5
+          </strong></a>
+        </h4>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div> <!--container-->
+</div> <!--main text-->
+</div>
+</div>
+
+
 
 
 
@@ -165,6 +386,31 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <!-- Can place script tags with JavaScript files here -->
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+          });
+          return false;
+        });
+    </script>
+
+    <!--Script to make navbar change on scroll -->
+    <script>
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+          $(".navbar-fixed-top").css("background-color", "black"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+        } else {
+          $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+        }
+      });
+    });
+</script>
 
   </body>
 </html>

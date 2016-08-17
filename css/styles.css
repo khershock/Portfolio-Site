@@ -12,6 +12,11 @@
 	color: black;
 }
 
+#carousel-home {
+	position: relative;
+	margin-top: 0px;
+}
+
 .carousel-caption h3 {
 	font-size: 6em;
 
@@ -36,58 +41,92 @@
 #homeh {
 	text-align: center;
 	padding-bottom: 40px;
+	padding-top: 40px;
 }
 
-#work {
+#mywork {
 	padding-bottom: 50px;
 	text-align: center;
-}
-
-.moreb {
-	text-align: center;
-	padding-bottom: 50px;
 }
 
 .test {
 	padding: 10px;
 }
 
+#testhr {
+	width: 20%;
+	border-color: black;
+}
+
+.test img {
+	margin: 0 auto;
+}
+
+.test h3 {
+	bottom: 0px;
+}
+
+.test p {
+	letter-spacing: .25em;
+	padding: 10px;
+
+}
+
 
 /******** CSS for all pages ********/
 body {
 	background-color: #DADCDE;
-}
-
-.nav {
-	padding-top: 5px;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	background-color: #DADCDE;
-	z-index: 1;
-}
-
-.nav ul {
-	text-align: center;
+	position: relative;
 }
 
 
-.nav ul li {
-	display: inline-block;
+
+.navbar {
+	background-color: transparent;
+	border: none;
 }
 
-.nav ul li a {
-	color: black;
-	letter-spacing: 0.05em;
-	padding: 20px 10px 20px;
-	text-decoration: none;
-	transition: color 700ms;
-	-webkit-transition: color 700ms;
+.navbar-header>.navbar-brand {
+	color: white;
 }
 
-.nav a:hover {
-	color: #4BBC96;
+.navbar-header>.mybrand a {
+	color: white;
 }
+
+.navbar-header>.mybrand>.navbar-brand p {
+	color: red;
+}
+
+.navbar-header>.mybrand a:hover {
+	color: red;
+}
+
+.navbar-header>.mybrand a:hover p {
+	color: white;
+}
+
+.navbar-header {
+	margin-bottom: 15px;
+}
+
+#navbar li {
+	padding-top: 10px;
+}
+
+#navbar ul li a {
+	color: white;
+}
+
+#navbar li.active > a {
+	color: red;
+	background-color: black;
+}
+
+#navbar a:hover {
+	color: red;
+}
+
 
 .header h1 {
 	color: black;
@@ -101,7 +140,6 @@ body {
 .main {
 	color: black;
 	padding-top: 85px;
-	width: 90%;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -117,6 +155,16 @@ body {
 }
 
 /********* contact *********/
+/*#contact {
+	background-image: url("../img/bg_contact.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}*/
+
+/*#contact>.main {
+	color: white;
+}*/
+
 .contact {
 	text-align: center;
 	padding-top: 50px;
@@ -144,6 +192,9 @@ body {
 }
 
 /********* FAQ **********/
+#faq {
+	text-align: center;
+}
 .panel-default {
 	background-color: #DADCDE;
 	color: black;
@@ -168,3 +219,87 @@ body {
 }
 
 /********** Work **********/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin: 5px;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(75,75,75,0.7);
+  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(48, 152, 157, 0.4);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  font-weight: normal;
+  margin: -52px 0 0 0;
+  padding: 62px 100px;
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
