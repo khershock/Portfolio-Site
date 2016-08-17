@@ -303,3 +303,27 @@ body {
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
+
+#video {
+	align-content: center;
+	padding: 10px;
+	margin-bottom: 15px;
+	height: 315px;
+	width: 560px;
+}
+
+/*******Footer*******/
+
+footer {
+	display: block;
+	float: right;
+	bottom: 0px;
+}
+#social {
+	float: right;
+}
+
+
+
+
+

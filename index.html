@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,6 +29,14 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Main jumbotron for a primary marketing message or call to action
     <div class="jumbotron">
@@ -267,24 +277,6 @@
               </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h2>Project 7</h2>
-                <a class="info" href="#">link here</a>
-              </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h2>Project 8</h2>
-                <a class="info" href="#">link here</a>
-              </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -367,10 +359,31 @@
         </div>
       </div>
     </div>
-  </div> <!--container-->
-</div> <!--main text-->
-</div>
-</div>
+    </div> <!--container-->
+    </div> <!--main text-->
+  </div>
+  </div>
+
+  <!-- 16:9 aspect ratio -->
+  <div class="container-fluid" id="video">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/msfHD3BRWGE">
+      </iframe>
+    </div>
+  </div>
+
+  <footer>
+      <div>&copy Kory Hershock 2016
+        <a id="social" href="https://twitter.com/koryhershock" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @koryhershock</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="fb-like" 
+          data-href="https://www.facebook.com/kory.hershock" data-layout="standard" 
+          data-action="like" 
+          data-size="small" 
+          data-show-faces="true" 
+          data-share="false">
+        </div>
+      </div>
+    </footer>
 
 
 
