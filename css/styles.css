@@ -42,6 +42,7 @@
 	text-align: center;
 	padding-bottom: 40px;
 	padding-top: 40px;
+	lett
 }
 
 #mywork {
@@ -75,7 +76,7 @@
 
 /******** CSS for all pages ********/
 body {
-	background-color: #DADCDE;
+	background-color: #FFFFFF;
 	position: relative;
 }
 
@@ -189,6 +190,21 @@ body {
 	margin-top: 30px;
 	margin-bottom: 50px;
 	text-align: center;
+}
+
+.form-control {
+	width: 80%;
+}
+
+#contact-txt {
+	float: left;
+}
+
+
+
+#contactform button {
+	float: left;
+	margin: 0 auto;
 }
 
 /********* FAQ **********/
@@ -322,6 +338,89 @@ footer {
 #social {
 	float: right;
 }
+
+
+/** Social List **/
+
+.social {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    background: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    background: #e64522;
+}
+
+.social .fa-github:hover {
+    background: #343434;
+}
+
+.social .fa-linkedin:hover {
+    background: #0094BC;
+}
+
+.social .fa-instagram:hover {
+    background: #375989;
+}
+
+.social .fa-youtube:hover {
+    background: #FF1F25;
+}
+
+
+
+
+
+
 
 
 
