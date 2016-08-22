@@ -1,4 +1,9 @@
 /********* index *********/
+html,
+body {
+	height: 100%;
+}
+
 .jumbotron {
 	background-image: url(../img/portfolio.jpeg);
 	background-size: cover;
@@ -10,6 +15,20 @@
 
 .jumbotron a {
 	color: black;
+}
+
+#cover {
+	background-size: cover;
+	background-image: url("../img/cover.jpg");
+	color: white;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+#cover h1 {
+	margin-top: 50px;
 }
 
 #carousel-home {
@@ -42,7 +61,6 @@
 	text-align: center;
 	padding-bottom: 40px;
 	padding-top: 40px;
-	lett
 }
 
 #mywork {
@@ -234,6 +252,21 @@ body {
 	color: red;
 }
 
+.learn-more {
+	text-align: left;
+	float: left;
+}
+
+.modal-lg {
+	background-color: white;
+}
+
+#resume {
+	height: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
 /********** Work **********/
 .hovereffect {
   width: 100%;
@@ -419,7 +452,9 @@ footer {
 
 
 
-
+section {
+	background-position: fixed;
+}
 
 
 
